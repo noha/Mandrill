@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Mandrill",
+	"classinstvars" : [
+		"apiKey"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MandrillClient",
+	"type" : "normal"
+}

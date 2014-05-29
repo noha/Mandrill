@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Mandrill",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"email",
+		"status",
+		"id",
+		"rejectReason"
+	],
+	"name" : "MandrillMessageResponse",
+	"type" : "normal"
+}
