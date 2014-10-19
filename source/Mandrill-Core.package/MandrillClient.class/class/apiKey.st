@@ -1,0 +1,4 @@
+accessing
+apiKey
+
+	^ self defaultApiKey

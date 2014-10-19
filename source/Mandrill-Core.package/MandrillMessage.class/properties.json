@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Mandrill-Core-Mandrill-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"properties",
+		"text",
+		"html",
+		"subject",
+		"fromEmail",
+		"fromName",
+		"to"
+	],
+	"name" : "MandrillMessage",
+	"type" : "normal"
+}

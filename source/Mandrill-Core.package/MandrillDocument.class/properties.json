@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "EstebanMaringolo 10/19/2014 20:20",
+	"super" : "Object",
+	"category" : "Mandrill-Core-Mandrill-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fileName",
+		"mimeType",
+		"contents"
+	],
+	"name" : "MandrillDocument",
+	"type" : "normal"
+}
