@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "PaulDeBruicker 10/29/2014 00:21",
+	"super" : "Object",
+	"category" : "Mandrill-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"variableName",
+		"variableContent"
+	],
+	"name" : "MandrillVariable",
+	"type" : "normal"
+}

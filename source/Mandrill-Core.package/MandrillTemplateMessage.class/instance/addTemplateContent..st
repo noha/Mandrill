@@ -1,0 +1,3 @@
+as yet unclassified
+addTemplateContent:aMandrillVariable
+	self templateContent add:aMandrillVariable

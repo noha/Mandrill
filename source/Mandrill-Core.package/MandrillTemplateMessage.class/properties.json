@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "PaulDeBruicker 10/28/2014 21:47",
+	"super" : "MandrillMessage",
+	"category" : "Mandrill-Core-Mandrill-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"templateName",
+		"templateContent"
+	],
+	"name" : "MandrillTemplateMessage",
+	"type" : "normal"
+}

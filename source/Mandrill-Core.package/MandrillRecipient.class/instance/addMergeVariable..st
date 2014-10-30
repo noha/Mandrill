@@ -1,0 +1,4 @@
+merge-variables
+addMergeVariable:aMandrillMergeVariable
+	self mergeVariables addMergeVariable: aMandrillMergeVariable.
+	

@@ -1,5 +1,5 @@
 initialization
 initialize
 	super initialize.
-	properties := GRSmallDictionary new.
+	properties := Dictionary new.
 	to := OrderedCollection new

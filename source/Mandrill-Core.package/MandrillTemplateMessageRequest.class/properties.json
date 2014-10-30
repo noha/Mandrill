@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MandrillMessageRequest",
+	"category" : "Mandrill-Core-Mandrill-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MandrillTemplateMessageRequest",
+	"type" : "normal"
+}

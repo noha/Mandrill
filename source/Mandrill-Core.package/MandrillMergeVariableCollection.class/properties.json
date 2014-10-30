@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Mandrill-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"messageRecipient",
+		"mergeVariables"
+	],
+	"name" : "MandrillMergeVariableCollection",
+	"type" : "normal"
+}
