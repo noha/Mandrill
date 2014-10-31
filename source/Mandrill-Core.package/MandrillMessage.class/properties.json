@@ -12,7 +12,8 @@
 		"subject",
 		"fromEmail",
 		"fromName",
-		"to"
+		"to",
+		"globalMergeVariables"
 	],
 	"name" : "MandrillMessage",
 	"type" : "normal"

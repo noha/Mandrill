@@ -1,0 +1,3 @@
+acessing
+addGlobalMergeVariable: aMergeVariable
+	self globalMergeVariables add:aMergeVariable 
