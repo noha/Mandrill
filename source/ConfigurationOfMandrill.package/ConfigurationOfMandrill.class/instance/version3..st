@@ -10,5 +10,5 @@ version3: spec
 		spec 
 			project: 'ZincHTTPComponents' with: #stable;
 			project: 'Neo JSON' with: #stable.
-		spec package: 'Mandrill-Core' with: 'Mandrill-Core-PaulDeBruicker.3'.
+		spec package: 'Mandrill-Core' with: 'Mandrill-Core-PaulDeBruicker.4'.
 		spec package: 'Mandrill-Tests' with: 'Mandrill-Tests-PaulDeBruicker.3'].
