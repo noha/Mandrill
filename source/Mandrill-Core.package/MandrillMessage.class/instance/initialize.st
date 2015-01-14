@@ -1,5 +1,6 @@
 initialization
 initialize
-	super initialize.
-	properties := Dictionary new.
-	to := OrderedCollection new
+  super initialize.
+  properties := Dictionary new.
+  headers := Dictionary new.
+  to := OrderedCollection new

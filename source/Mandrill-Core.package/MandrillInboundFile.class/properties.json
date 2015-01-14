@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Mandrill-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fileName",
+		"mimeType",
+		"content",
+		"base64"
+	],
+	"name" : "MandrillInboundFile",
+	"type" : "normal"
+}

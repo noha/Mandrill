@@ -1,0 +1,3 @@
+as yet unclassified
+addDataFrom: eventDataDictionary
+	self subclassResponsibility

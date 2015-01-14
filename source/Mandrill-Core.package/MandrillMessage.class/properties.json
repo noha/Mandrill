@@ -6,6 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"headers",
 		"properties",
 		"text",
 		"html",

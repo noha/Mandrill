@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "MandrillInboundWebhook",
+	"category" : "Mandrill-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"url",
+		"ip",
+		"userAgent",
+		"location",
+		"userAgentParsed",
+		"messageId"
+	],
+	"name" : "MandrillMessageWebhook",
+	"type" : "normal"
+}

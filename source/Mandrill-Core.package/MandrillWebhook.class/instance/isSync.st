@@ -1,0 +1,3 @@
+testing
+isSync
+	^ false

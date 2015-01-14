@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Mandrill-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"timeStamp",
+		"event"
+	],
+	"name" : "MandrillWebhook",
+	"type" : "normal"
+}

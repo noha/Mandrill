@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "MandrillWebhook",
+	"category" : "Mandrill-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"message",
+		"parsedImages",
+		"parsedAttachments"
+	],
+	"name" : "MandrillInboundWebhook",
+	"type" : "normal"
+}
