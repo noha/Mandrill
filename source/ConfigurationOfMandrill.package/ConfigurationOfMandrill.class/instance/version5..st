@@ -13,5 +13,5 @@ version5: spec
 				project: 'Neo JSON' with: '9';
 				project: 'EmailReplyParser' with: '1.0'.
 			spec
-				package: 'Mandrill-Core' with: 'Mandrill-Core-EstebanMaringolo.10';
+				package: 'Mandrill-Core' with: 'Mandrill-Core-PaulDeBruicker.11';
 				package: 'Mandrill-Tests' with: 'Mandrill-Tests-PaulDeBruicker.3' ]
