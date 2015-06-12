@@ -10,7 +10,7 @@ version5: spec
 			spec timestamp: '07/04/2015 18:00'.
 			spec
 				project: 'ZincHTTPComponents' with: '2.5.5';
-				project: 'Neo JSON' with: '9';
+				project: 'NeoJSON' with: '9';
 				project: 'EmailReplyParser' with: '1.0'.
 			spec
 				package: 'Mandrill-Core' with: 'Mandrill-Core-PaulDeBruicker.11';

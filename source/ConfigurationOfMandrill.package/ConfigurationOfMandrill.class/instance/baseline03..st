@@ -13,7 +13,7 @@ baseline03: spec
 								className: #ConfigurationOfZincHTTPComponents;
 								versionString: #stable;
 								repository: 'http://mc.stfx.eu/ZincHTTPComponents' ];
-				project: 'Neo JSON'
+				project: 'NeoJSON'
 					with: [ 
 							spec
 								className: #ConfigurationOfNeoJSON;
@@ -27,7 +27,7 @@ baseline03: spec
 								versionString: #stable;
 								repository: 'http://smalltalkhub.com/mc/pdebruic/EmailReplyParser/main/' ].
 			spec
-				package: 'Mandrill-Core' with: [ spec requires: #('Neo JSON') ];
+				package: 'Mandrill-Core' with: [ spec requires: #('NeoJSON') ];
 				package: 'Mandrill-Tests' with: [ spec requires: #('Mandrill-Core') ].
 			spec
 				group: 'default' with: #('Mandrill-Core' 'Mandrill-Tests');
