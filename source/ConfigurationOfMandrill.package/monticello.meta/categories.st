@@ -1,1 +1,1 @@
-SystemOrganization addCategory: 'ConfigurationOfMandrill'!
+SystemOrganization addCategory: #ConfigurationOfMandrill!
