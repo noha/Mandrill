@@ -1,3 +1,3 @@
 accessing
 tags
-	^ tags ifNil: [ tags := #() ]
+	^ tags ifNil: [ tags := Array new ]

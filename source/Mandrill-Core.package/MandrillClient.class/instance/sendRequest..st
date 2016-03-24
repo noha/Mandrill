@@ -1,6 +1,6 @@
 as yet unclassified
 sendRequest: aMandrillRequest
-	| response |
+	| response json |
 	self prepareRequest: aMandrillRequest.
 	response := ZnClient new
 		url:
@@ -14,4 +14,8 @@ sendRequest: aMandrillRequest
 						with: (NeoJSONWriter toStringPretty: aMandrillRequest)
 						type: ((ZnMimeType main: 'application' sub: 'json') charSet: 'utf-8'));
 		post.
-	^ NeoJSONReader fromString: response
+	json := NeoJSONReader fromString: response.
+	json isArray
+		ifTrue: [ ^ json ].
+	json at: 'code' ifAbsent: [ ^ json ].
+	MandrillSendError signal: (json at: 'message')
