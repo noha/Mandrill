@@ -14,8 +14,6 @@ sendRequest: aMandrillRequest
 						with: (NeoJSONWriter toStringPretty: aMandrillRequest)
 						type: ((ZnMimeType main: 'application' sub: 'json') charSet: 'utf-8'));
 		post.
-	json := NeoJSONReader fromString: response.
-	json isArray
-		ifTrue: [ ^ json ].
+	json := (NeoJSONObject fromString: response) first.
 	json at: 'code' ifAbsent: [ ^ json ].
-	MandrillSendError signal: (json at: 'message')
+	MandrillSendError signal: json at: 'message'
