@@ -13,6 +13,12 @@ baseline03: spec
                 className: 'ConfigurationOfZincHTTPComponents';
                 versionString: #'stable';
                 repository: 'http://mc.stfx.eu/ZincHTTPComponents' ];
+        project: 'NeoJSON'
+          with: [ 
+              spec
+                className: 'ConfigurationOfNeoJSON';
+                versionString: #'stable';
+                repository: 'http://mc.stfx.eu/Neo' ];
         project: 'EmailReplyParser'
           with: [ 
               spec
@@ -28,20 +34,4 @@ baseline03: spec
         group: 'default' with: #('Mandrill-Core' 'Mandrill-Tests');
         group: 'Core' with: #('Mandrill-Core');
         group: 'Tests' with: #('Mandrill-Tests');
-        group: 'Inbound' with: #('Core' 'EmailReplyParser') ].
-  spec
-    for: #'squeakCommon'
-    do: [ 
-      spec
-        project: 'NeoJSON'
-        with: [ 
-          spec
-            className: 'ConfigurationOfNeoJSON';
-            versionString: #'stable';
-            repository: 'http://mc.stfx.eu/Neo' ] ].
-  spec
-    for: #'gemstone'
-    do: [ 
-      spec
-        baseline: 'NeoJSON'
-        with: [ spec repository: 'github://GsDevKit/NeoJSON:gs_master/repository' ] ]
+        group: 'Inbound' with: #('Core' 'EmailReplyParser') ]
