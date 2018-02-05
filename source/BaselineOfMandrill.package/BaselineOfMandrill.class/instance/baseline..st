@@ -9,20 +9,20 @@ baseline: spec
           with: [ 
               spec
                 className: 'ConfigurationOfZincHTTPComponents';
-                versionString: #'stable';
+                versionString: '2.8.9';
                 repository: 'http://mc.stfx.eu/ZincHTTPComponents' ];
         project: 'NeoJSON'
           with: [ 
               spec
                 className: 'ConfigurationOfNeoJSON';
-                versionString: #'stable';
+                versionString: '17';
                 repository: 'http://mc.stfx.eu/Neo' ];
         project: 'EmailReplyParser'
           with: [ 
               spec
                 className: 'ConfigurationOfEmailReplyParser';
                 loads: #('Core');
-                versionString: #'stable';
+                versionString: '1.0';
                 repository:
                     'http://smalltalkhub.com/mc/pdebruic/EmailReplyParser/main/' ].
       spec
