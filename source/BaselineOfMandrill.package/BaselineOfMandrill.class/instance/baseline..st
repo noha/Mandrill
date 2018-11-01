@@ -5,12 +5,6 @@ baseline: spec
     for: #'common'
     do: [ 
       spec
-        project: 'ZincHTTPComponents'
-          with: [ 
-              spec
-                className: 'ConfigurationOfZincHTTPComponents';
-                versionString: '2.9.4';
-                repository: 'http://mc.stfx.eu/ZincHTTPComponents' ];
         project: 'NeoJSON'
           with: [ 
               spec
