@@ -5,12 +5,8 @@ baseline: spec
     for: #'common'
     do: [ 
       spec
-        project: 'NeoJSON'
-          with: [ 
-              spec
-                className: 'ConfigurationOfNeoJSON';
-                versionString: '17';
-                repository: 'http://mc.stfx.eu/Neo' ];
+        baseline: 'NeoJSON' 
+			with: [ spec repository: 'github://svenvc/NeoJSON:master/repository' ];
         project: 'EmailReplyParser'
           with: [ 
               spec
