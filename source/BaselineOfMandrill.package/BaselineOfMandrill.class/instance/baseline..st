@@ -6,7 +6,7 @@ baseline: spec
     do: [ 
       spec
         baseline: 'NeoJSON' 
-			with: [ spec repository: 'github://svenvc/NeoJSON:master/repository' ];
+			with: [ spec repository: 'github://zweidenker/NeoJSON:master/repository' ];
         project: 'EmailReplyParser'
           with: [ 
               spec
