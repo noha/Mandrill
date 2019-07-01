@@ -25,4 +25,4 @@ sendRequest: aMandrillRequest
 								nextPutAll: 'Got an unexpected mandrill response: ';
 								nextPutAll: response printString ]) ].
 	json at: 'code' ifAbsent: [ ^ json ].
-	MandrillSendError signal: (json at: 'message')
+	MandrillSendError signal: (json at: 'message').
