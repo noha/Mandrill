@@ -14,13 +14,15 @@ sendRequest: aMandrillRequest
 				with: (NeoJSONWriter toStringPretty: aMandrillRequest)
 				type: ((ZnMimeType main: 'application' sub: 'json') charSet: 'utf-8'));
 		post ]
-		on: ConnectionTimedOut
+		on: NetworkError
 		do: [ :ex | 
 			MandrillSendError
 				signal:
 					(String
-						streamContents:
-							[ :stream | stream nextPutAll: 'Tiemout while connecting to Mandrill server' ]) ].
+						streamContents: [ :stream | 
+							stream
+								nextPutAll: 'Network error while connecting to Mandrill server: ';
+								nextPutAll: ex messageText printString ]) ].
 	json := [ (NeoJSONObject fromString: response) first ]
 		on: Error
 		do: [ :ex | 
