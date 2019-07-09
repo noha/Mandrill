@@ -2,7 +2,7 @@ as yet unclassified
 sendRequest: aMandrillRequest
 	| response json |
 	self prepareRequest: aMandrillRequest.
-	response := ZnClient new
+	response := [ ZnClient new
 		url:
 			(String
 				streamContents: [ :stream | 
@@ -13,7 +13,14 @@ sendRequest: aMandrillRequest
 			(ZnEntity
 				with: (NeoJSONWriter toStringPretty: aMandrillRequest)
 				type: ((ZnMimeType main: 'application' sub: 'json') charSet: 'utf-8'));
-		post.
+		post ]
+		on: ConnectionTimedOut
+		do: [ :ex | 
+			MandrillSendError
+				signal:
+					(String
+						streamContents:
+							[ :stream | stream nextPutAll: 'Tiemout while connecting to Mandrill server' ]) ].
 	json := [ (NeoJSONObject fromString: response) first ]
 		on: Error
 		do: [ :ex | 
@@ -25,4 +32,4 @@ sendRequest: aMandrillRequest
 								nextPutAll: 'Got an unexpected mandrill response: ';
 								nextPutAll: response printString ]) ].
 	json at: 'code' ifAbsent: [ ^ json ].
-	MandrillSendError signal: (json at: 'message').
+	MandrillSendError signal: (json at: 'message')
