@@ -23,11 +23,7 @@ sendRequest: aMandrillRequest
 							stream
 								nextPutAll: 'Network error while connecting to Mandrill server: ';
 								nextPutAll: ex messageText printString ]) ].
-	 [ json :=(NeoJSONObject fromString: response).
-		"most of the time the object returned by mandrill is a json array.
-		but there is alsso some error cases where the object is directly a json object.
-		we try to be compliant."
-		json isArray ifTrue: [ json := json first ] ]
+	 [ json :=(NeoJSONObject fromString: response) asMandrillResponseObject]
 		on: Error
 		do: [ :ex | 
 			MandrillSendError
